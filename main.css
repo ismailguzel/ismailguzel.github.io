@@ -7,6 +7,16 @@ body {
 				 "Segoe UI Symbol";
 	padding: 0;
 	margin: 0;
+
+}
+
+#canvas {
+	position: absolute;
+	display: inline-block;
+	width:  70%;
+	height: 100%;
+    margin-left: 420px;
+    margin-right: auto;
 }
 
 
@@ -724,3 +734,4 @@ div#member p{
     max-width: 100%;
   }
 }
+
