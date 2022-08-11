@@ -32,7 +32,7 @@ canvas.setAttribute('height', style_height * dpi);
 canvas.setAttribute('width', style_width * dpi);
 }
 
-	var particle_count = 35,
+	var particle_count = 25,
 		particles = [],
 		couleurs   = ["#3a0088", "#930077", "#e61c5d","#ffbd39"];
     function Particle()
@@ -42,8 +42,8 @@ canvas.setAttribute('width', style_width * dpi);
         this.x = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("width").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
         this.y = Math.floor((Math.random() * ((+getComputedStyle(canvas).getPropertyValue("height").slice(0, -2) * dpi) - this.radius + 1) + this.radius));
         this.color = couleurs[Math.floor(Math.random()*couleurs.length)];
-        this.speedx = Math.round((Math.random()*201)+0)/100;
-        this.speedy = Math.round((Math.random()*201)+0)/100;
+        this.speedx = Math.round((Math.random()*201)+0)/200;
+        this.speedy = Math.round((Math.random()*201)+0)/200;
 
         switch (Math.round(Math.random()*couleurs.length))
         {
